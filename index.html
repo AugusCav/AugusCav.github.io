@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio AugusCav</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5d9ea830ef.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="ubuntu-mono-regular">
+    <div class="encabezado">
+      <div class="titulo">
+        <h1>Augusto Cavaignac</h1>
+        <h2>> FULL STACK DEVELOPER</h2>
+      </div>
+      <div>
+        <span class="subtitulo">
+          Apasionado de la programación. Disfruto de aprender nuevas cosas y
+          poner en práctica mis habilidades.
+        </span>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h2>> STACK</h2>
+      <div class="grid">
+        <div class="stack-element" id="git">
+          <img
+            class="stack-img"
+            src="./assets/icons/git.png"
+            alt="Git"
+            title="Git"
+          />
+        </div>
+        <div class="stack-element" id="html">
+          <img
+            class="stack-img"
+            src="./assets/icons/html.png"
+            alt="HTML"
+            title="HTML"
+          />
+        </div>
+        <div class="stack-element" id="css">
+          <img
+            class="stack-img"
+            src="./assets/icons/css.png"
+            alt="CSS"
+            title="CSS"
+          />
+        </div>
+        <div class="stack-element" id="bootstrap">
+          <img
+            class="stack-img"
+            src="./assets/icons/bootstrap.png"
+            alt="Bootstrap"
+            title="Bootstrap"
+          />
+        </div>
+        <div class="stack-element" id="tailwind">
+          <img
+            class="stack-img"
+            src="./assets/icons/tailwind.png"
+            alt="Tailwind CSS"
+            title="Tailwind CSS"
+          />
+        </div>
+        <div class="stack-element" id="javascript">
+          <img
+            class="stack-img"
+            src="./assets/icons/javascript.png"
+            alt="JavaScript"
+            title="JavaScript"
+          />
+        </div>
+        <div class="stack-element" id="angular">
+          <img
+            class="stack-img"
+            src="./assets/icons/angular.png"
+            alt="Angular"
+            title="Angular"
+          />
+        </div>
+        <div class="stack-element" id="node">
+          <img
+            class="stack-img"
+            src="./assets/icons/node.png"
+            alt="Node.js"
+            title="Node.js"
+          />
+        </div>
+        <div class="stack-element" id="csharp">
+          <img
+            class="stack-img"
+            src="./assets/icons/csharp.png"
+            alt="C#"
+            title="C#"
+          />
+        </div>
+        <div class="stack-element" id="net">
+          <img
+            class="stack-img"
+            src="./assets/icons/netcore.png"
+            alt=".NET Core"
+            title=".NET Core"
+          />
+        </div>
+        <div class="stack-element" id="postgre">
+          <img
+            class="stack-img"
+            src="./assets/icons/postgre.png"
+            alt="PostgreSQL"
+            title="PostgreSQL"
+          />
+        </div>
+        <div class="stack-element" id="mssql">
+          <img
+            class="stack-img"
+            src="./assets/icons/mssqls.png"
+            alt="MSSQL"
+            title="MSSQL"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="proyectos">
+      <h2>> PROYECTOS</h2>
+      <div class="grid">
+        <div chess-open-modal class="col-span-4 proyecto-element">
+          <h3>Gestor de torneos de ajedrez</h3>
+        </div>
+        <div blackjack-open-modal class="col-span-4 proyecto-element">
+          <h3>Blackjack contra la PC</h3>
+        </div>
+        <div generador-open-modal class="col-span-4 proyecto-element">
+          <h3>Generador de ideas de coding</h3>
+        </div>
+        <div gestor-open-modal class="col-span-4 proyecto-element">
+          <h3>Gestor de compra/ventas para heladería</h3>
+        </div>
+        <div calc-open-modal class="col-span-4 proyecto-element">
+          <h3>Calculadora</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>> REDES Y CONTACTO</h2>
+      <div class="footer-element">
+        <a href="https://www.linkedin.com/in/augustocava/" target="_blank"
+          ><i class="fa-brands fa-linkedin fa-xl"></i
+        ></a>
+        <a href="https://github.com/AugusCav" target="_blank"
+          ><i class="fa-brands fa-square-github fa-xl"></i
+        ></a>
+        <a id="email"><i class="fa-solid fa-envelope fa-xl"></i></a>
+      </div>
+    </div>
+
+    <div id="snackbar" class="snackbar">Email copiado</div>
+
+    <!-- Modales proyectos -->
+    <dialog chess-modal>
+      <div>
+        <div class="header-modal">
+          <button chess-close-modal class="boton-cerrar">
+            <img src="./assets/svgs/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="modal-content">
+          <h2>> CHESSTOURNEY - GESTOR DE TORNEOS DE AJEDREZ</h2>
+          <p class="roboto-regular texto-modal" style="max-width: 80ch">
+            Para el proyecto final de mi carrera —la Tecnicatura en Programación
+            de la Universidad Tecnológica Nacional de Córdoba— creé una web app
+            para la gestión de torneos de ajedrez de un modo sencillo y
+            amigable. La aplicación consistía en usuarios de tipo "organizador"
+            y usuarios de tipo "participante". El rol de organizador permitía
+            crear torneos, agregando los detalles necesarios para que los
+            usuarios que quisieran competir fueran capaces de encontrar
+            fácilmente el torneo según las características que prefirieran.
+          </p>
+          <br />
+          <h2>> CARACTERÍSTICAS</h2>
+          <ul class="roboto-regular texto-modal">
+            <li>Buscador de torneos con filtros avanzados</li>
+            <li>
+              Formularios reactivos para la creación y edición de los torneos
+            </li>
+            <li>Visualización interactiva de partidas jugadas</li>
+            <li>Análisis de partidas con Stockfish</li>
+            <li>Dashboard con reportes estadísticos</li>
+            <li>Interfaz adaptativa según el rol de usuario</li>
+            <li>Registro / Inicio de sesión</li>
+            <li>Integración con MercadoPago</li>
+            <li>Interfaz de usuario responsiva</li>
+          </ul>
+          <br />
+          <h2>> TECNOLOGÍAS UTILIZADAS</h2>
+          <ul class="roboto-regular texto-modal">
+            <li>SQL Server</li>
+            <li>Angular</li>
+            <li>NET Core</li>
+            <li>Bootstrap</li>
+            <li>Stockfish (Motor de ajedrez)</li>
+            <li>Chessboardjs</li>
+            <li>Chessjs</li>
+          </ul>
+          <br />
+          <h2>> IMÁGENES</h2>
+          <div class="modal-imagenes">
+            <img
+              src="./assets/images/ChessTourney/InicioSesion.png"
+              alt="Inicio de sesion"
+            />
+            <img src="./assets/images/ChessTourney/Listado.png" alt="Listado" />
+            <img src="./assets/images/ChessTourney/Partida.png" />
+            <img src="./assets/images/ChessTourney/Portada.png" alt="Portada" />
+            <img
+              src="./assets/images/ChessTourney/RegistrarTorneo.png"
+              alt="Registrar Torneo"
+            />
+            <img
+              src="./assets/images/ChessTourney/Registro.png"
+              alt="Registro"
+            />
+            <img
+              src="./assets/images/ChessTourney/ReportePartidas.png"
+              alt="Reporte de partidas"
+            />
+            <img
+              src="./assets/images/ChessTourney/TorneoDetalles.png"
+              alt="Detalle de torneos"
+            />
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog blackjack-modal>
+      <div>
+        <div class="header-modal">
+          <button blackjack-close-modal class="boton-cerrar">
+            <img src="./assets/svgs/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="modal-content">
+          <div class="titulo-link">
+            <h2 class="">> BLACKJACK</h2>
+            <button blackjack-ir class="boton-ir">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </button>
+          </div>
+          <p class="roboto-regular texto-modal" style="max-width: 80ch">
+            Un simple juego de Blackjack creado como webapp para jugar contra la
+            PC.
+          </p>
+          <br />
+          <h2>> CARACTERÍSTICAS</h2>
+          <ul class="roboto-regular texto-modal">
+            <li>Interfaz responsiva</li>
+            <li>Partidas rápidas</li>
+            <li>Página de instrucciones</li>
+            <li>Fácil de jugar</li>
+          </ul>
+          <br />
+          <h2>> TECNOLOGÍAS UTILIZADAS</h2>
+          <ul class="roboto-regular texto-modal">
+            <li>Angular</li>
+            <li>Bootstrap</li>
+            <li>Electronjs</li>
+          </ul>
+          <br />
+          <h2>> IMÁGENES</h2>
+          <div class="modal-imagenes">
+            <img src="./assets/images/Blackjack/Inicio.jpeg" alt="Inicio" />
+            <img
+              src="./assets/images/Blackjack/Juego.jpeg"
+              alt="Juego blackjack"
+            />
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog generador-modal>
+      <div>
+        <div class="header-modal">
+          <button generador-close-modal class="boton-cerrar">
+            <img src="./assets/svgs/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="modal-content">
+          <div class="titulo-link">
+            <h2 class="">> GENERADOR DE IDEAS CODING</h2>
+            <button generador-ir class="boton-ir">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </button>
+          </div>
+          <p class="roboto-regular texto-modal" style="max-width: 80ch">
+            Este es un generador de ideas de programación basado en la
+            restricción de "tipos" y "temas". El generador simplemente elige
+            aleatoriamente un tipo, que refiere al tipo de proyecto, y un tema,
+            que refiere a una temática general a la que orientar el proyecto. La
+            idea es que se utilice para obtener inspiración para la creación de
+            proyectos, como una forma de brainstorming.
+          </p>
+          <br />
+          <h2>> CARACTERÍSTICAS</h2>
+          <ul class="roboto-regular texto-modal">
+            <li>Gran variedad de temas</li>
+            <li>Gran variedad de tipos</li>
+            <li>Generación instantánea</li>
+            <li>Generar solo tipo o tema</li>
+            <li>Interfaz intuitiva, agradable y responsiva</li>
+            <li>
+              Sección de preguntas frecuentes donde se explica cómo utilizar la
+              aplicación
+            </li>
+          </ul>
+          <br />
+          <h2>> TECNOLOGÍAS UTILIZADAS</h2>
+          <ul class="roboto-regular texto-modal">
+            <li>Angular</li>
+            <li>TailwindCSS</li>
+            <li>ElectronJS</li>
+          </ul>
+          <br />
+          <h2>> IMÁGENES</h2>
+          <div class="modal-imagenes">
+            <img
+              src="./assets/images/GeneradorIdeas/Generador.jpeg"
+              alt="Generador"
+            />
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog gestor-modal>
+      <div>
+        <div class="header-modal">
+          <button gestor-close-modal class="boton-cerrar">
+            <img src="./assets/svgs/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="modal-content">
+          <h2>> GESTOR DE COMPRA/VENTAS PARA HELADERÍA</h2>
+          <p class="roboto-regular texto-modal" style="max-width: 80ch">
+            Este fue un proyecto para una materia de la universidad, donde
+            trabajamos junto con algunos compañeros creando una aplicación de
+            escritorio. Es un simple gestor de compra de insumos y venta de
+            helados para una heladería ficticia.
+          </p>
+          <br />
+          <h2>> CARACTERÍSTICAS</h2>
+          <ul class="roboto-regular texto-modal">
+            <li>Automatización del cálculo de gastos</li>
+            <li>Automatización de cálculo de ventas</li>
+            <li>Simple generador de factura para la venta</li>
+            <li>Buscador de producto</li>
+            <li>Buscador de Insumo</li>
+            <li>Buscador de clientes regulares con filtro por apellidos</li>
+            <li>Inicio de sesión</li>
+            <li>Interfaz simple y responsiva</li>
+            <li>
+              Base de datos relacional donde se almacenan datos de clientes,
+              insumos para la compra y venta.
+            </li>
+          </ul>
+          <br />
+          <h2>> TECNOLOGÍAS UTILIZADAS</h2>
+          <ul class="roboto-regular texto-modal">
+            <li>SQL Server</li>
+            <li>Java</li>
+            <li>Java Swing</li>
+            <li>Librería FlatLaF para Java Swing</li>
+          </ul>
+          <br />
+          <h2>> IMÁGENES</h2>
+          <div class="modal-imagenes">
+            <img
+              src="./assets/images/Heladeria/Clientes.png"
+              alt="Pantalla clientes"
+            />
+            <img
+              src="./assets/images/Heladeria/Login.png"
+              alt="Inicio de sesion"
+            />
+            <img
+              src="./assets/images/Heladeria/Main.png"
+              alt="Pantalla principal"
+            />
+            <img
+              src="./assets/images/Heladeria/Main2.png"
+              alt="Pantalla principal 2"
+            />
+            <img
+              src="./assets/images/Heladeria/Productos.png"
+              alt="Productos"
+            />
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog calc-modal>
+      <div>
+        <div class="header-modal">
+          <button calc-close-modal class="boton-cerrar">
+            <img src="./assets/svgs/close.svg" alt="close" />
+          </button>
+        </div>
+        <div class="modal-content">
+          <div class="titulo-link">
+            <h2 class="">> CALCULADORA</h2>
+            <button calc-ir class="boton-ir">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </button>
+          </div>
+          <p class="roboto-regular texto-modal" style="max-width: 80ch">
+            Mini proyecto de calculadora con operaciones matemáticas básicas.
+          </p>
+          <br />
+          <h2>> CARACTERÍSTICAS</h2>
+          <ul class="roboto-regular texto-modal">
+            <li>Suma, resta, división y multiplicación</li>
+            <li>Buffer de memoria para registrar el input</li>
+            <li>Responsiva</li>
+          </ul>
+          <br />
+          <h2>> TECNOLOGÍAS UTILIZADAS</h2>
+          <ul class="roboto-regular texto-modal">
+            <li>HTML</li>
+            <li>Javascript</li>
+            <li>CSS</li>
+          </ul>
+          <br />
+          <h2>> IMÁGENES</h2>
+          <div class="modal-imagenes">
+            <img
+              src="./assets/images/Calculadora/Calculadora.png"
+              alt="Calculadora"
+            />
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <script src="./script.js"></script>
+  </body>
+</html>
