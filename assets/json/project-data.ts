@@ -8,7 +8,7 @@ export const PROJECT_DATA = [
     imagen: '../../../assets/img/chesstourney.png',
     alt: 'App de analisis de partida de ajedrez',
     demo: '',
-    codigo: '',
+    codigo: 'https://github.com/AugusCav/ps-gtda',
   },
   {
     id: 2,
@@ -19,18 +19,18 @@ export const PROJECT_DATA = [
     imagen: '../../../assets/img/blackjack.jpeg',
     alt: 'Imagen de partida de Blackjack',
     demo: 'https://auguscav.github.io/black-jack/',
-    codigo: '',
+    codigo: 'https://github.com/AugusCav/blackjack',
   },
   {
     id: 3,
     titulo: 'Generador de ideas de coding',
-    stack: ['Angular', 'Tailwind'],
+    stack: ['Angular', 'Material Angular', 'Tailwind'],
     descripcion:
       'Este es un generador de ideas de programación basado en la restricción de "tipos" y "temas". El generador simplemente elige aleatoriamente un tipo, que refiere al tipo de proyecto, y un tema, que refiere a una temática general a la que orientar el proyecto. La idea es que se utilice para obtener inspiración para la creación de proyectos, como una forma de brainstorming.',
     imagen: '../../../assets/img/generador.jpeg',
     alt: 'Imagen de generador de ideas de coding',
     demo: 'https://auguscav.github.io/generador-ideas-code/',
-    codigo: '',
+    codigo: 'https://github.com/AugusCav/generador-ideas',
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const PROJECT_DATA = [
     imagen: '../../../assets/img/heladeria.png',
     alt: 'Imagen de gestor de compra/ventas',
     demo: '',
-    codigo: '',
+    codigo: 'https://github.com/AugusCav/heladeria',
   },
   {
     id: 5,
@@ -52,6 +52,6 @@ export const PROJECT_DATA = [
     imagen: '../../../assets/img/calculadora.png',
     alt: 'Imagen de calculadora web',
     demo: 'https://auguscav.github.io/calculadora/',
-    codigo: '',
+    codigo: 'https://github.com/AugusCav/calculadora',
   },
 ];
